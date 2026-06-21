@@ -1,0 +1,9 @@
+Alembic async migration environment for the Hotel Management System API.
+
+The database URL is read from app settings (DATABASE_URL) in env.py, so you do
+not need to set sqlalchemy.url in alembic.ini.
+
+Common commands:
+  alembic revision --autogenerate -m "init"   # generate a migration
+  alembic upgrade head                         # apply migrations
+  alembic downgrade -1                         # roll back one revision
