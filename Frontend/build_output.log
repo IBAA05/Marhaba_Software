@@ -1,0 +1,134 @@
+
+> luxe-hotel-frontend@1.0.0 build
+> tsc -b && vite build
+
+vite.config.ts(3,18): error TS2307: Cannot find module 'node:path' or its corresponding type declarations.
+vite.config.ts(10,25): error TS2304: Cannot find name '__dirname'.
+src/api/endpoints.ts(81,42): error TS2345: Argument of type 'RoomFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'RoomFilters'.
+src/api/endpoints.ts(106,44): error TS2345: Argument of type 'GuestFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'GuestFilters'.
+src/api/endpoints.ts(136,48): error TS2345: Argument of type 'BookingFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'BookingFilters'.
+src/api/endpoints.ts(175,61): error TS2345: Argument of type 'TaskFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'TaskFilters'.
+src/api/endpoints.ts(199,55): error TS2345: Argument of type 'InventoryFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'InventoryFilters'.
+src/api/endpoints.ts(252,59): error TS2345: Argument of type 'ExpenseFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'ExpenseFilters'.
+src/api/endpoints.ts(277,48): error TS2345: Argument of type 'InvoiceFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'InvoiceFilters'.
+src/api/endpoints.ts(303,46): error TS2345: Argument of type 'ReviewFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'ReviewFilters'.
+src/api/endpoints.ts(324,58): error TS2345: Argument of type 'ConciergeFilters' is not assignable to parameter of type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'ConciergeFilters'.
+src/components/layout/navItems.ts(4,3): error TS2305: Module '"lucide-react"' has no exported member 'Concierge'.
+src/pages/CalendarPage.tsx(32,31): error TS2554: Expected 2 arguments, but got 1.
+src/pages/CalendarPage.tsx(95,26): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/pages/CalendarPage.tsx(148,39): error TS2322: Type 'Booking[]' is not assignable to type '{ id: number; guest_name: string; room_number: string; booking_ref: string; status: string; }[]'.
+  Type 'Booking' is not assignable to type '{ id: number; guest_name: string; room_number: string; booking_ref: string; status: string; }'.
+    Types of property 'id' are incompatible.
+      Type 'string' is not assignable to type 'number'.
+src/pages/CalendarPage.tsx(149,41): error TS2322: Type 'Booking[]' is not assignable to type '{ id: number; guest_name: string; room_number: string; booking_ref: string; status: string; }[]'.
+  Type 'Booking' is not assignable to type '{ id: number; guest_name: string; room_number: string; booking_ref: string; status: string; }'.
+    Types of property 'id' are incompatible.
+      Type 'string' is not assignable to type 'number'.
+src/pages/CalendarPage.tsx(209,33): error TS2322: Type 'string' is not assignable to type 'BookingStatus'.
+src/pages/ConciergePage.tsx(91,9): error TS2353: Object literal may only specify known properties, and 'type' does not exist in type 'Partial<ConciergeRequest>'.
+src/pages/ConciergePage.tsx(109,14): error TS2339: Property 'request_number' does not exist on type 'ConciergeRequest'.
+src/pages/ConciergePage.tsx(118,41): error TS2339: Property 'type' does not exist on type 'ConciergeRequest'.
+src/pages/ConciergePage.tsx(145,32): error TS2339: Property 'completed_today' does not exist on type 'NoInfer<{ items: ConciergeRequest[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/ConciergePage.tsx(146,28): error TS2339: Property 'in_progress' does not exist on type 'NoInfer<{ items: ConciergeRequest[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/ConciergePage.tsx(155,25): error TS2339: Property 'length' does not exist on type 'NoInfer<{ pending: number; }>'.
+src/pages/DashboardPage.tsx(98,29): error TS2339: Property 'net_revenue' does not exist on type 'NoInfer<DashboardStats>'.
+src/pages/DashboardPage.tsx(144,25): error TS2339: Property 'label' does not exist on type 'NoInfer<ReviewSummary>'.
+src/pages/DashboardPage.tsx(148,24): error TS2339: Property 'breakdown' does not exist on type 'NoInfer<ReviewSummary>'.
+src/pages/DashboardPage.tsx(148,46): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/pages/DashboardPage.tsx(318,35): error TS2339: Property 'due_date' does not exist on type 'HousekeepingTask'.
+src/pages/DashboardPage.tsx(321,24): error TS2339: Property 'description' does not exist on type 'HousekeepingTask'.
+src/pages/DashboardPage.tsx(321,41): error TS2339: Property 'type' does not exist on type 'HousekeepingTask'.
+src/pages/FinancialsPage.tsx(135,28): error TS2339: Property 'balance' does not exist on type 'NoInfer<FinancialOverview>'.
+src/pages/FinancialsPage.tsx(140,28): error TS2339: Property 'income' does not exist on type 'NoInfer<FinancialOverview>'.
+src/pages/FinancialsPage.tsx(147,28): error TS2339: Property 'expenses' does not exist on type 'NoInfer<FinancialOverview>'.
+src/pages/GuestProfilePage.tsx(100,59): error TS2339: Property 'id_number' does not exist on type 'Guest'.
+src/pages/GuestsPage.tsx(37,5): error TS2353: Object literal may only specify known properties, and 'sort' does not exist in type 'GuestFilters'.
+src/pages/GuestsPage.tsx(83,27): error TS2339: Property 'last_stay' does not exist on type 'Guest'.
+src/pages/GuestsPage.tsx(83,52): error TS2339: Property 'last_stay' does not exist on type 'Guest'.
+src/pages/GuestsPage.tsx(121,53): error TS2339: Property 'active_stays' does not exist on type 'NoInfer<{ items: Guest[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/GuestsPage.tsx(122,55): error TS2339: Property 'new_this_month' does not exist on type 'NoInfer<{ items: Guest[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/HousekeepingPage.tsx(37,61): error TS2554: Expected 0 arguments, but got 1.
+src/pages/HousekeepingPage.tsx(38,63): error TS2353: Object literal may only specify known properties, and 'floor' does not exist in type 'TaskFilters'.
+src/pages/HousekeepingPage.tsx(103,27): error TS2339: Property 'id' does not exist on type 'BoardRoom'.
+src/pages/HousekeepingPage.tsx(120,23): error TS2339: Property 'assigned_to' does not exist on type 'BoardRoom'.
+src/pages/HousekeepingPage.tsx(122,40): error TS2339: Property 'assigned_to' does not exist on type 'BoardRoom'.
+src/pages/HousekeepingPage.tsx(124,29): error TS2339: Property 'assigned_to' does not exist on type 'BoardRoom'.
+src/pages/HousekeepingPage.tsx(156,61): error TS2339: Property 'type' does not exist on type 'HousekeepingTask'.
+src/pages/InventoryPage.tsx(31,37): error TS2339: Property 'exportCsv' does not exist on type '{ list: (filters?: InventoryFilters) => Promise<{ items: InventoryItem[]; pagination?: PaginationMeta | undefined; }>; get: (id: number) => Promise<...>; ... 5 more ...; exportUrl: () => string; }'.
+src/pages/InventoryPage.tsx(117,20): error TS2339: Property 'total_items' does not exist on type 'NoInfer<{ items: InventoryItem[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/InventoryPage.tsx(123,20): error TS2339: Property 'low_stock' does not exist on type 'NoInfer<{ items: InventoryItem[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/InventoryPage.tsx(129,20): error TS2339: Property 'out_of_stock' does not exist on type 'NoInfer<{ items: InventoryItem[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/InvoicesPage.tsx(27,58): error TS2353: Object literal may only specify known properties, and 'search' does not exist in type 'InvoiceFilters'.
+src/pages/InvoicesPage.tsx(29,11): error TS2339: Property 'markPaid' does not exist on type '{ pay: UseMutationResult<Invoice, Error, number, unknown>; send: UseMutationResult<{ sent: boolean; }, Error, number, unknown>; }'.
+src/pages/InvoicesPage.tsx(70,35): error TS2551: Property 'issued_date' does not exist on type 'Invoice'. Did you mean 'issued_at'?
+src/pages/InvoicesPage.tsx(210,45): error TS2551: Property 'issued_date' does not exist on type 'NoInfer<Invoice>'. Did you mean 'issued_at'?
+src/pages/InvoicesPage.tsx(221,57): error TS2339: Property 'guest_email' does not exist on type 'NoInfer<Invoice>'.
+src/pages/InvoicesPage.tsx(228,59): error TS2339: Property 'room_type' does not exist on type 'NoInfer<Invoice>'.
+src/pages/InvoicesPage.tsx(241,26): error TS2339: Property 'line_items' does not exist on type 'NoInfer<Invoice>'.
+src/pages/InvoicesPage.tsx(241,49): error TS7006: Parameter 'li' implicitly has an 'any' type.
+src/pages/InvoicesPage.tsx(241,53): error TS7006: Parameter 'idx' implicitly has an 'any' type.
+src/pages/InvoicesPage.tsx(253,54): error TS2339: Property 'subtotal' does not exist on type 'NoInfer<Invoice>'.
+src/pages/MessagesPage.tsx(17,15): error TS2305: Module '"@/types"' has no exported member 'Conversation'.
+src/pages/MessagesPage.tsx(28,63): error TS2345: Argument of type '{ filter: string; search: string; }' is not assignable to parameter of type '"all" | "unread" | "flagged" | undefined'.
+src/pages/MessagesPage.tsx(45,9): error TS2561: Object literal may only specify known properties, but 'guest_id' does not exist in type '{ guestId: number; content: string; }'. Did you mean to write 'guestId'?
+src/pages/MessagesPage.tsx(135,27): error TS2339: Property 'room_number' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(136,38): error TS2339: Property 'room_number' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(159,24): error TS2339: Property 'body' does not exist on type 'Message'.
+src/pages/MessagesPage.tsx(162,32): error TS2339: Property 'created_at' does not exist on type 'Message'.
+src/pages/MessagesPage.tsx(207,23): error TS2339: Property 'loyalty_tier' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(208,44): error TS2339: Property 'loyalty_tier' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(215,26): error TS2339: Property 'room_number' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(216,33): error TS2339: Property 'room_number' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(216,66): error TS2339: Property 'room_type' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(222,31): error TS2339: Property 'check_in' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(222,60): error TS2339: Property 'check_in' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(226,31): error TS2339: Property 'check_out' does not exist on type 'ConversationSummary'.
+src/pages/MessagesPage.tsx(226,61): error TS2339: Property 'check_out' does not exist on type 'ConversationSummary'.
+src/pages/ReservationsPage.tsx(28,35): error TS2724: '"@/types"' has no exported member named 'GanttRoomType'. Did you mean 'GanttRoom'?
+src/pages/ReservationsPage.tsx(67,5): error TS2353: Object literal may only specify known properties, and 'start' does not exist in type '{ start_date: string; end_date: string; room_type?: string | undefined; }'.
+src/pages/ReservationsPage.tsx(87,27): error TS2339: Property 'room_types' does not exist on type 'NoInfer<GanttResponse>'.
+src/pages/ReservationsPage.tsx(162,27): error TS7006: Parameter 'rt' implicitly has an 'any' type.
+src/pages/ReservationsPage.tsx(180,31): error TS7006: Parameter 'room' implicitly has an 'any' type.
+src/pages/ReservationsPage.tsx(188,25): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<RoomStatus, string>'.
+src/pages/ReservationsPage.tsx(236,29): error TS7006: Parameter 'rt' implicitly has an 'any' type.
+src/pages/ReservationsPage.tsx(260,33): error TS7006: Parameter 'room' implicitly has an 'any' type.
+src/pages/ReservationsPage.tsx(286,43): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/pages/ReservationsPage.tsx(289,40): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<BookingStatus, BadgeColor>'.
+src/pages/ReservationsPage.tsx(383,35): error TS7006: Parameter 'room' implicitly has an 'any' type.
+src/pages/ReservationsPage.tsx(385,8): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/pages/ReservationsPage.tsx(391,39): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/pages/ReviewsPage.tsx(26,53): error TS2322: Type 'string' is not assignable to type 'number'.
+src/pages/ReviewsPage.tsx(42,25): error TS2339: Property 'label' does not exist on type 'NoInfer<ReviewSummary>'.
+src/pages/ReviewsPage.tsx(45,25): error TS2339: Property 'total' does not exist on type 'NoInfer<ReviewSummary>'.
+src/pages/ReviewsPage.tsx(49,24): error TS2339: Property 'breakdown' does not exist on type 'NoInfer<ReviewSummary>'.
+src/pages/ReviewsPage.tsx(49,46): error TS7006: Parameter 'b' implicitly has an 'any' type.
+src/pages/ReviewsPage.tsx(102,29): error TS2339: Property 'length' does not exist on type 'never[] | NoInfer<{ items: Review[]; pagination?: PaginationMeta | undefined; }>'.
+  Property 'length' does not exist on type 'NoInfer<{ items: Review[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/ReviewsPage.tsx(107,27): error TS2339: Property 'map' does not exist on type 'never[] | NoInfer<{ items: Review[]; pagination?: PaginationMeta | undefined; }>'.
+  Property 'map' does not exist on type 'NoInfer<{ items: Review[]; pagination?: PaginationMeta | undefined; }>'.
+src/pages/ReviewsPage.tsx(123,35): error TS2339: Property 'rating' does not exist on type 'Review'.
+src/pages/ReviewsPage.tsx(127,22): error TS2339: Property 'reply' does not exist on type 'Review'.
+src/pages/ReviewsPage.tsx(132,55): error TS2339: Property 'reply' does not exist on type 'Review'.
+src/pages/RoomsPage.tsx(107,7): error TS2345: Argument of type '{ type: RoomType; amenities: string[]; room_number: string; floor: number; price_per_night: number; max_occupancy: number; status: string; description?: string | undefined; has_panorama?: boolean | undefined; }' is not assignable to parameter of type 'Partial<Room>'.
+  Types of property 'status' are incompatible.
+    Type 'string' is not assignable to type 'RoomStatus | undefined'.
+src/pages/RoomsPage.tsx(163,40): error TS2339: Property 'price_per_night' does not exist on type 'RoomTypeSummary'.
+src/pages/RoomsPage.tsx(170,29): error TS2339: Property 'max_occupancy' does not exist on type 'RoomTypeSummary'.
+src/pages/RoomsPage.tsx(173,24): error TS2339: Property 'amenities' does not exist on type 'RoomTypeSummary'.
+src/pages/RoomsPage.tsx(175,27): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/pages/RoomsPage.tsx(218,50): error TS2339: Property 'price_per_night' does not exist on type 'RoomTypeSummary'.
+src/pages/RoomsPage.tsx(222,38): error TS2339: Property 'max_occupancy' does not exist on type 'RoomTypeSummary'.
+src/pages/SettingsPage.tsx(22,11): error TS2339: Property 'update' does not exist on type 'UseMutationResult<HotelSettings, Error, Partial<HotelSettings>, unknown>'.
+src/pages/SettingsPage.tsx(27,48): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'HotelSettings'.
+  No index signature with a parameter of type 'string' was found on type 'HotelSettings'.
+src/pages/SettingsPage.tsx(204,27): error TS2339: Property 'staff' does not exist on type 'NoInfer<HotelSettings>'.

@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7
 
     # CORS
-    FRONTEND_ORIGIN: str = "http://localhost:3000"
+    FRONTEND_ORIGIN: str = "http://localhost:3000,http://localhost:5173"
 
     # SMTP
     SMTP_HOST: str = "localhost"
@@ -43,7 +43,7 @@ class Settings(BaseSettings):
 
     # Seed admin
     FIRST_SUPERADMIN_USERNAME: str = "admin"
-    FIRST_SUPERADMIN_EMAIL: str = "admin@hotel.local"
+    FIRST_SUPERADMIN_EMAIL: str = "admin@example.com"
     FIRST_SUPERADMIN_PASSWORD: str = "Admin@12345"
 
     @property
